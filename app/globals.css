@@ -1,0 +1,519 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+#menu-icon{
+  display: none;
+}
+h2{
+  font-size:30px;
+}
+p{
+  width: 25%;
+}
+.title-h3{
+  font-size: 15px;
+  margin-top: 20px;
+}
+.link{
+  transition: 0.4s cubic-bezier(0, 1.08, 1, 1);
+
+}
+.link:hover{
+  color: #38bdf8;
+  border-bottom: 2px solid #f43f5e;
+  letter-spacing: 2px;
+}
+
+input{
+  padding: 1rem;
+  color:black;
+  border-radius: 10px;
+  text-align: left;
+}
+
+ul{
+  margin-top: 3vh;
+  border-left: 2px solid white;
+}
+section{
+  display: flex;
+  align-items: center;
+  font-size:large;
+  font-weight: 500;
+  width:100%;
+  padding:1.5rem;
+  border-radius: 10px;
+  
+}
+/* navbar styles */
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1; /* Place video behind content */
+}
+
+.navbar{
+  background-image: url('/images/BandPhoto2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height:80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.links-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  
+
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50vw;
+  font-size: x-large;
+
+}
+
+#socials{
+  margin-top: 3vh;
+}
+
+.icon-animation a{
+  transition: 0.4s cubic-bezier(0.26, 0.84, 0.58, 1);
+
+}
+.icon-animation a:hover{
+  transform: scale(1.5);
+
+}
+
+#socials-aside{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  height:30vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* main content styles */
+
+#song-section{
+  flex-direction: column;
+  justify-content: space-around;
+  color:white;
+  height: 70vh;
+  width:100vw;
+}
+
+.song-card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height:100%;
+  border-radius: 5px;
+  background-color: rgb(21, 20, 20);
+  
+
+}
+.song-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height:15vh;
+  width:50%;
+ 
+
+}
+
+.song-title{
+  font-size: 30px;
+}
+.controls{
+  margin-top: 2vh;
+  
+}
+
+#audio-icon{
+  transition: 0.4s cubic-bezier(0.26, 0.84, 0.58, 1);
+}
+
+#audio-icon:hover{
+  transform: scale(1.5);
+
+}
+.streaming-link-container{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding-inline: 10px;
+  width:70%;
+  margin-top: 10vh;
+  font-size: 10px;
+ 
+}
+.streaming-links{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width:25vw;
+}
+
+
+#members-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 12px;
+  max-width: 50vw;
+  min-width:fit-content;
+  min-width: 50vw;
+  margin-left: 26vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-inline: contain;
+}
+
+#members-section::-webkit-scrollbar {
+  height: 5px; /* Adjust the height of the scrollbar */
+}
+
+#members-section::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+#members-section::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px /* Rounded corners for the thumb */
+}
+
+#members-section::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the thumb on hover */
+}
+
+#member-card{
+  display: inline-flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 800px;
+  border-radius: 10px;
+  border: 2px solid black;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(54, 69, 79);
+  color: black;
+  margin-right: 10px;
+  flex: 0 0 auto; /* Ensure cards don't shrink */
+  scroll-snap-align: start;
+
+}
+#member-card > img{
+  border-radius: 10px;
+  width:300px;
+  height:350px;
+  object-fit: contain;
+  
+}
+.content{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: flex-start;
+width:100%;
+padding: 1.5rem;
+}
+.content > *{
+  width:100%;
+}
+
+#socials-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+ 
+}
+#social-container{
+  display: flex;
+  flex-direction: row; /* Arrange items in a row */
+  gap: 10px; /* Space between each item */
+  align-items: center;
+}
+
+/* footer styles */
+#footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height:300px;
+  color:black;
+  background-color: gray;
+}
+#newsletter-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 10vh;
+  max-width: 40vw;;
+  width: auto;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  color: white;
+  margin-top: 6vh;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Prevent vertical scrolling */
+  white-space: nowrap; /* Prevent wrapping of images */
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; /* Smooth scrolling */
+  width: calc(100% - 20px); /* Adjust width to fit container */
+  height: 200px;
+  margin-bottom: 10vh;
+  
+}
+
+.image-container::-webkit-scrollbar {
+  height: 5px; /* Adjust the height of the scrollbar */
+}
+
+.image-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+.image-container::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.image-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the thumb on hover */
+}
+
+.scroll-container {
+  overflow: hidden; /* Hide vertical scrollbars */
+  width: 100vw; /* Full viewport width */
+  margin: 0 auto; /* Center container */
+  padding: 0 10px; /* Optional: add padding for aesthetics */
+  border-bottom: 2px solid red;
+  border-radius: 10px;
+  margin-left: 10vw;
+}
+
+.photo {
+  flex: 0 0 auto; /* Prevent images from shrinking or growing */
+  width: 20vw; /* Adjust width to fit desired number of images */
+  height: 200px;
+  object-fit: cover;
+  margin-right: 10px; /* Space between images */
+  scroll-snap-align: start;
+}
+
+
+/* Style for the modal background */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal is on top */
+}
+.loader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.custom-loader {
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:conic-gradient(#0000 10%,#6a0f0f);
+  -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation:s3 1s infinite linear;
+  
+}
+@keyframes s3 {to{transform: rotate(1turn)}}
+/* Style for the modal content */
+.modal-content {
+  position: relative; /* Required for absolute positioning of loader */
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.img-div{
+  display: flex;
+  align-items: center;
+  height:50%;
+  width: 50%;
+
+}
+.img{
+  max-width: 100%;
+  max-height: 100%;
+  width: 800px;
+  height: 600px;
+ 
+}
+
+
+/* Optional: Add some responsiveness */
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+}
+
+/* media queries  */
+
+@media(min-width:1001px){
+  .navbar{
+    background-size: cover;
+    padding:200px;
+   
+    
+  }
+ 
+#streaming-link-container{
+  width:40vw;
+}
+.photo{
+  width: 200px; /* Adjust width to fit 5 images, accounting for margins */
+}
+  
+}
+  @media(max-width:926px){
+   
+   .navbar{
+    padding: 300px;
+    height: 20vh;
+   }
+    .links{
+      display: none;
+    }
+
+   #menu-icon{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right:30px;
+   }
+   #socials{
+    display: none;
+   }
+   #social-container > a > p {
+    font-size:10px;
+   }
+   .streaming-link-container{
+    width:100%
+   }  
+   .streaming-link-container img{
+    transform: scale(0.5);
+   }
+   #members-section{
+    width:70vw;
+   }
+   
+   #member-card > img{
+    width:200px;
+    height: 250px;
+   }
+   #email{
+    font-size:9px;
+   }
+}
+
