@@ -1,7 +1,7 @@
 export default function Tours(){
     return (
         <>
-        <h1> Shows</h1>
+        <h1> Currently there are no shows at this time</h1>
         
         </>
     )

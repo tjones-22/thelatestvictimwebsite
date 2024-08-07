@@ -477,6 +477,7 @@ padding: 1.5rem;
 .photo{
   width: 200px; 
 }
+
   
 }
   @media(max-width:926px){
@@ -542,10 +543,8 @@ padding: 1.5rem;
 
 
 
-@media(max-width:300px){
- .navbar{
-  padding: 180px;
- } 
-
-
+@media (max-width:390px) {
+  .navbar{
+    padding: 200px;
+  }
 }
