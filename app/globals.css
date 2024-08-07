@@ -105,7 +105,7 @@ section{
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
-  width: 100%;
+  width: 100vw;
   height:80vh;
   display: flex;
   flex-direction: column;
@@ -483,7 +483,7 @@ padding: 1.5rem;
    
    
    .navbar{
-    padding: 250px;
+    padding: 300px;
     height: 20vh;
    }
     .links{
@@ -528,7 +528,7 @@ padding: 1.5rem;
    }
    #members-section{
     max-width: 100%;
-    margin-left: 16vw;
+    
    }
    #member-card{
     width:70vw;

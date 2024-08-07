@@ -35,7 +35,7 @@ const LinkMenu = ({ isOpen, toggleMenu }) => {
             
             <a href="https://www.facebook.com/thelatestvictim" target="_blank">
                 <Image
-                    src="/icons/FC.png"
+                    src="/Icons/FC.png"
                     alt="Facebook"
                     width={40}
                     height={40}
@@ -44,7 +44,7 @@ const LinkMenu = ({ isOpen, toggleMenu }) => {
 
             <a href="https://www.instagram.com/thelatestvictim?igsh=MWJucDZ6NDBqZWltZw%3D%3D" target="_blank">
                 <Image
-                    src="/icons/IC.png"
+                    src="/Icons/IC.png"
                     alt="Instagram"
                     width={40}
                     height={40}
@@ -52,7 +52,7 @@ const LinkMenu = ({ isOpen, toggleMenu }) => {
             </a>
             <a href="https://www.tiktok.com/@the.latest.victim?_t=8nYNFux77M2&_r=1" target="_blank">
                 <Image
-                    src="/icons/TT.png"
+                    src="/Icons/TT.png"
                     alt="TikTok"
                     width={40}
                     height={40}
@@ -61,7 +61,7 @@ const LinkMenu = ({ isOpen, toggleMenu }) => {
 
             <a href="https://open.spotify.com/artist/3D4CF6gqkkZezog1u9iiSi?si=clFuULL3TrCiyDHEzpugRw&nd=1&dlsi=b864df9ded254483" target="_blank">
                 <Image
-                    src="/icons/SC.png"
+                    src="/Icons/SC.png"
                     alt="Spoitfy"
                     width={40}
                     height={40}
@@ -70,7 +70,7 @@ const LinkMenu = ({ isOpen, toggleMenu }) => {
 
             <a href="https://music.apple.com/us/album/bleeding-eyes/1754315139?i=1754315140" target="_blank">
                 <Image
-                    src="/icons/AMC.png"
+                    src="/Icons/AMC.png"
                     alt="Apple Music"
                     width={40}
                     height={40}
@@ -78,7 +78,7 @@ const LinkMenu = ({ isOpen, toggleMenu }) => {
             </a>
             <a href="https://www.youtube.com/channel/UC_P7pIIgrFcf5LTyvdWLoNw" target="_blank">
                 <Image
-                    src="/icons/YTC.png"
+                    src="/Icons/YTC.png"
                     alt="Youtube"
                     width={40}
                     height={40}
