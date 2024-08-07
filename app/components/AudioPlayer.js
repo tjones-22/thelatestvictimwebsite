@@ -1,9 +1,6 @@
-// src/components/AudioPlayer.js
 import React, { useState, useEffect, useRef } from 'react';
 import { Howl } from 'howler';
 import Image from 'next/image';
-
-
 
 const AudioPlayer = () => {
   const [sound, setSound] = useState(null);
@@ -30,6 +27,12 @@ const AudioPlayer = () => {
         setIsPlaying(false);
         setCurrentTime(0);
         clearInterval(intervalRef.current); // Clear the interval
+      },
+      onloaderror: (id, error) => {
+        console.error(`Failed to load sound: ${error}`);
+      },
+      onplayerror: (id, error) => {
+        console.error(`Failed to play sound: ${error}`);
       }
     });
     setSound(newSound);
@@ -87,20 +90,19 @@ const AudioPlayer = () => {
         <button onClick={isPlaying ? pauseAudio : playAudio}>
           {isPlaying ? (
             <Image
-            
-                src="/Icons/Pause.png"
-                alt="pause icon"
-                width={20}
-                height={20}
-                id="audio-icon"
+              src="/Icons/Pause.png"
+              alt="pause icon"
+              width={20}
+              height={20}
+              id="audio-icon"
             />
           ) : (
             <Image
-                src="/Icons/Play.png"
-                alt="play icon"
-                width={20}
-                height={20}
-                id="audio-icon"
+              src="/Icons/Play.png"
+              alt="play icon"
+              width={20}
+              height={20}
+              id="audio-icon"
             />
           )}
         </button>
@@ -115,9 +117,7 @@ const AudioPlayer = () => {
           position: 'relative',
           cursor: 'pointer',
           borderRadius: '10px'
-
         }}
-        
       >
         <div
           style={{
