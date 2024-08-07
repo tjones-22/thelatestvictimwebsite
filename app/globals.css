@@ -380,6 +380,7 @@ padding: 1.5rem;
   border-bottom: 2px solid red;
   border-radius: 10px;
   margin-left: 0; /* Reset margin-left */
+ 
 }
 .photo {
   flex: 0 0 auto; /* Prevent images from shrinking or growing */
@@ -553,5 +554,11 @@ padding: 1.5rem;
   }
   .song-card{
     height:calc(100% + 100px);
+  }
+  #image-container::-webkit-scrollbar {
+    height: 10px;
+  }
+  .scroll-container{
+    margin-bottom: 5vh;
   }
 }
