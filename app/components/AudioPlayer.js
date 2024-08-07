@@ -12,7 +12,7 @@ const AudioPlayer = () => {
 
   useEffect(() => {
     const newSound = new Howl({
-      src: ['/audio/Bleeding_Eyes_Short.wav'], // Replace with your song path
+      src: ['/audio/Bleeding_Eyes_Short.wav', '/audio/Bleeding_Eyes.mp3'], // Replace with your song path
       onload: () => {
         setDuration(newSound.duration());
       },
