@@ -14,7 +14,7 @@ const Images = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const responseK = await fetch('/images/KnittingFactory/imageData.json');
+        const responseK = await fetch('/imagedata/ImageData.json');
         const dataK = await responseK.json();
         setImagesK(dataK);
         setImagesLoading(prev => ({ ...prev, knittingFactory: false }));
@@ -24,7 +24,7 @@ const Images = () => {
       }
 
       try {
-        const responseN = await fetch('/images/NewCol/NewColonyImgData.json');
+        const responseN = await fetch('/imagedata/ImgNC.json');
         const dataN = await responseN.json();
         setImagesN(dataN);
         setImagesLoading(prev => ({ ...prev, newColony: false }));
