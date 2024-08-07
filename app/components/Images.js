@@ -75,26 +75,25 @@ const Images = () => {
         </div>
       )}
 
-      <div className="scroll-container">
-              <div className="image-container">
-                {imagesK.map((image, index) => (
-                  <button
-                    className="photo"
-                    key={index}
-                    onClick={() => handleImageClick(image.src)}
-                  >
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      width={200}
-                      height={200}
-                      
-                      onLoad={handleImageLoad}
-                    />
-                  </button>
-                ))}
-              </div>
-        </div>
+    <div className="scroll-container">
+      <div className="image-container">
+        {imagesK.map((image, index) => (
+          <button
+            className="photo"
+            key={index}
+            onClick={() => handleImageClick(image.src)}
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={200}
+              height={200}
+              onLoad={handleImageLoad}
+            />
+          </button>
+        ))}
+      </div>
+    </div>
 
       <h2 className="title-h3">New Colony Beer Company: July 6th 2024</h2>
       {imagesLoading.newColony && (
@@ -102,6 +101,7 @@ const Images = () => {
           <div className="custom-loader"></div>
         </div>
       )}
+      
       <div className="scroll-container">
         <div className="image-container">
           {imagesN.map((image, index) => (
@@ -115,7 +115,6 @@ const Images = () => {
                 alt={image.alt}
                 width={200}
                 height={200}
-               
                 onLoad={handleImageLoad}
               />
             </button>

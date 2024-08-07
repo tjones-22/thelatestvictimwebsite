@@ -351,12 +351,10 @@ padding: 1.5rem;
   padding: 10px 0;
   box-sizing: border-box;
   scroll-behavior: smooth; /* Smooth scrolling */
-  width: calc(100% - 20px); /* Adjust width to fit container */
+  width: 100%; /* Ensure full width */
   height: 200px;
   margin-bottom: 10vh;
-  
 }
-
 .image-container::-webkit-scrollbar {
   height: 5px; /* Adjust the height of the scrollbar */
 }
@@ -376,14 +374,13 @@ padding: 1.5rem;
 
 .scroll-container {
   overflow: hidden; /* Hide vertical scrollbars */
-  width: 100vw; /* Full viewport width */
+  width: 100%; /* Full viewport width */
   margin: 0 auto; /* Center container */
   padding: 0 10px; /* Optional: add padding for aesthetics */
   border-bottom: 2px solid red;
   border-radius: 10px;
-  margin-left: 10vw;
+  margin-left: 0; /* Reset margin-left */
 }
-
 .photo {
   flex: 0 0 auto; /* Prevent images from shrinking or growing */
   width: 20vw; /* Adjust width to fit desired number of images */
@@ -550,5 +547,8 @@ padding: 1.5rem;
 
   #member-card{
     margin-left: 16vw;
+  }
+  .scroll-container {
+    margin-left: 0; /* Adjust margin for very small screens */
   }
 }
