@@ -88,13 +88,13 @@ const Images = () => {
                       alt={image.alt}
                       width={200}
                       height={200}
-                      layout="intrinsic"
-                      onLoadingComplete={handleImageLoad}
+                      
+                      onLoad={handleImageLoad}
                     />
                   </button>
                 ))}
               </div>
-            </div>
+        </div>
 
       <h2 className="title-h3">New Colony Beer Company: July 6th 2024</h2>
       {imagesLoading.newColony && (
@@ -115,8 +115,8 @@ const Images = () => {
                 alt={image.alt}
                 width={200}
                 height={200}
-                layout="intrinsic"
-                onLoadingComplete={handleImageLoad}
+               
+                onLoad={handleImageLoad}
               />
             </button>
           ))}
@@ -137,7 +137,7 @@ const Images = () => {
                 alt="Selected"
                 width={window.innerWidth} 
                 height={window.innerHeight} 
-                layout="intrinsic"
+               
                 onLoadingComplete={() => setLoading(false)}
                 className='img'
               />
