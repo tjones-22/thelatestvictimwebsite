@@ -67,6 +67,7 @@ const Images = () => {
 
   return (
     <>
+    
       <h2 className="title-h3">Knitting Factory: June 28th 2024</h2>
 
       {imagesLoading.knittingFactory && (
@@ -74,26 +75,26 @@ const Images = () => {
           <div className="custom-loader"></div>
         </div>
       )}
-
-      <div className="scroll-container">
-              <div className="image-container">
-                {imagesN.map((image, index) => (
-                  <button
-                    className="photo"
-                    key={index}
-                    onClick={() => handleImageClick(image.src)}
-                  >
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      width={200}
-                      height={200}
-                      onLoad={handleImageLoad}
-                    />
-                  </button>
-                ))}
-              </div>
-            </div>
+          {/* Knitt */}
+          <div className="scroll-container">
+        <div className="image-container">
+          {imagesN.map((image, index) => (
+            <button
+              className="photo"
+              key={index}
+              onClick={() => handleImageClick(image.src)}
+            >
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={200}
+                height={200}
+                onLoad={handleImageLoad}
+              />
+            </button>
+          ))}
+        </div>
+      </div>
 
       <h2 className="title-h3">New Colony Beer Company: July 6th 2024</h2>
       {imagesLoading.newColony && (
@@ -101,7 +102,7 @@ const Images = () => {
           <div className="custom-loader"></div>
         </div>
       )}
-      
+       {/* New Colony */}
       <div className="scroll-container">
         <div className="image-container">
           {imagesN.map((image, index) => (
@@ -121,6 +122,10 @@ const Images = () => {
           ))}
         </div>
       </div>
+
+
+      {/* modal */}
+
 
       {selectedImage && (
         <div className="modal" onClick={handleCloseModal}>
