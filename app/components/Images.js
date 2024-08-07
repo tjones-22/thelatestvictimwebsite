@@ -137,8 +137,8 @@ const Images = () => {
                 alt="Selected"
                 width={window.innerWidth} 
                 height={window.innerHeight} 
-               
-                onLoadingComplete={() => setLoading(false)}
+                layout='intrinsic'
+                onLoad={() => setLoading(false)}
                 className='img'
               />
             </div>

@@ -547,4 +547,8 @@ padding: 1.5rem;
   .navbar{
     padding: 200px;
   }
+
+  #member-card{
+    margin-left: 16vw;
+  }
 }
