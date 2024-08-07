@@ -48,12 +48,13 @@ const AudioPlayer = () => {
 
   const playAudio = () => {
     if (sound) {
-      sound.mute('false', id);
+      sound.mute(false); // Unmute the audio
       sound.play();
-      
+  
       intervalRef.current = setInterval(updateProgress, 1000); // Update progress every second
     }
   };
+  
 
   const pauseAudio = () => {
     if (sound) {
