@@ -48,7 +48,9 @@ const AudioPlayer = () => {
 
   const playAudio = () => {
     if (sound) {
+      sound.mute('false', id);
       sound.play();
+      
       intervalRef.current = setInterval(updateProgress, 1000); // Update progress every second
     }
   };
