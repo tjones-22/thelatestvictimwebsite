@@ -88,7 +88,7 @@ const AudioPlayer = () => {
           {isPlaying ? (
             <Image
             
-                src="/icons/Pause.png"
+                src="/Icons/Pause.png"
                 alt="pause icon"
                 width={20}
                 height={20}
@@ -96,7 +96,7 @@ const AudioPlayer = () => {
             />
           ) : (
             <Image
-                src="/icons/Play.png"
+                src="/Icons/Play.png"
                 alt="play icon"
                 width={20}
                 height={20}

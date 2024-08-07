@@ -26,7 +26,7 @@ export default function Home() {
             <a href="https://www.facebook.com/thelatestvictim" target="_blank">
               
               <Image
-              src="/icons/FC.png"
+              src="/Icons/FC.png"
               alt="Facebook"
               height={40}
               width={40}
@@ -37,7 +37,7 @@ export default function Home() {
             <a href="https://www.instagram.com/thelatestvictim?igsh=MWJucDZ6NDBqZWltZw%3D%3D" target="_blank">
               
               <Image
-              src="/icons/IC.png"
+              src="/Icons/IC.png"
               alt="Instagram"
               height={40}
               width={40}
@@ -47,7 +47,7 @@ export default function Home() {
             <a href="https://open.spotify.com/artist/3D4CF6gqkkZezog1u9iiSi?si=clFuULL3TrCiyDHEzpugRw"target="_blank">
 
               <Image
-              src="/icons/SC.png"
+              src="/Icons/SC.png"
               alt="Spoitfy"
               height={40}
               width={40}
@@ -57,7 +57,7 @@ export default function Home() {
             <a href="https://www.youtube.com/channel/UC_P7pIIgrFcf5LTyvdWLoNw" target="_blank">
 
               <Image
-              src="/icons/YTC.png"
+              src="/Icons/YTC.png"
               alt="Youtube"
               height={40}
               width={40}
@@ -66,7 +66,7 @@ export default function Home() {
             <a href="https://www.tiktok.com/@the.latest.victim?_t=8nYNFux77M2&_r=1" target="_blank">
 
               <Image
-              src="/icons/TT.png"
+              src="/Icons/TT.png"
               alt="Tik Tok"
               height={40}
               width={40}
@@ -76,7 +76,7 @@ export default function Home() {
             <a href="https://music.apple.com/us/album/bleeding-eyes/1754315139?i=1754315140" target="_blank">
 
               <Image
-              src="/icons/AMC.png"
+              src="/Icons/AMC.png"
               alt="Tik Tok"
               height={40}
               width={40}
@@ -140,7 +140,7 @@ export default function Home() {
             <a href="https://open.spotify.com/track/0DE3Pw8j0iKJvDtJ9iPg39?si=BG3zqvkSRcaxbb70sX7jNQ&utm_medium=share&utm_source=linktree&nd=1&dlsi=6ad5197f7459494a"target="_blank">
 
               <Image
-              src="/icons/SC.png"
+              src="/Icons/SC.png"
               alt="Spoitfy"
               height={40}
               width={40}
@@ -150,7 +150,7 @@ export default function Home() {
             <a href="https://www.youtube.com/watch?v=zg0bflFlCzs" target="_blank">
 
               <Image
-              src="/icons/YTC.png"
+              src="/Icons/YTC.png"
               alt="Youtube"
               height={40}
               width={40}
@@ -161,7 +161,7 @@ export default function Home() {
             <a href="https://music.apple.com/us/album/bleeding-eyes/1754315139?i=1754315140&at=1000lHKX&ct=linktree_http&itsct=lt_m&itscg=30200&ls=1" target="_blank">
 
               <Image
-              src="/icons/AMC.png"
+              src="/Icons/AMC.png"
               alt="Apple Music"
               height={40}
               width={40}
