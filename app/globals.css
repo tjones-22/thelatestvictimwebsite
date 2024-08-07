@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +14,7 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    
   }
 }
 
@@ -24,6 +26,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    
 }
 
 @layer utilities {
@@ -472,19 +475,21 @@ padding: 1.5rem;
   width:40vw;
 }
 .photo{
-  width: 200px; /* Adjust width to fit 5 images, accounting for margins */
+  width: 200px; 
 }
   
 }
   @media(max-width:926px){
    
+   
    .navbar{
-    padding: 300px;
+    padding: 250px;
     height: 20vh;
    }
     .links{
       display: none;
     }
+   
 
    #menu-icon{
     display: block;
@@ -499,8 +504,11 @@ padding: 1.5rem;
     font-size:10px;
    }
    .streaming-link-container{
-    width:100%
+    width:300px;
    }  
+   .streaming-links{
+    width:50%
+   }
    .streaming-link-container img{
     transform: scale(0.5);
    }
@@ -515,5 +523,29 @@ padding: 1.5rem;
    #email{
     font-size:9px;
    }
+   .scroll-container{
+    margin-left: 0;
+   }
+   #members-section{
+    max-width: 100%;
+    margin-left: 16vw;
+   }
+   #member-card{
+    width:70vw;
+    padding: 10px;
+  }
+   #member-card > img{
+    width:500px;
+    height: 550px;
+   }
 }
 
+
+
+@media(max-width:300px){
+ .navbar{
+  padding: 180px;
+ } 
+
+
+}
