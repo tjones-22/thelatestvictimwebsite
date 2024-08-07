@@ -551,4 +551,7 @@ padding: 1.5rem;
   .scroll-container {
     margin-left: 0; /* Adjust margin for very small screens */
   }
+  .song-card{
+    height:calc(100% + 100px);
+  }
 }
