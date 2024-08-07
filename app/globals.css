@@ -560,5 +560,6 @@ padding: 1.5rem;
   }
   .scroll-container{
     margin-bottom: 5vh;
+    border-bottom: 2px solid blueviolet;
   }
 }

@@ -183,8 +183,8 @@ export default function Home() {
         <Image
         src="/images/IndividualPhotos/WesIndividual.jpg"
         alt="Wes Anderson"
-        width={200}
-        height={200}
+        width={100}
+        height={100}
         />
         <h3 className='title-h3'>Wes Anderton</h3>
         <div className='content'>
