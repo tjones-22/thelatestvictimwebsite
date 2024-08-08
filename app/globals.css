@@ -57,7 +57,9 @@ p{
   border-bottom: 2px solid #f43f5e;
   letter-spacing: 2px;
 }
-
+.hide{
+  display: none;
+}
 input{
   padding: 1rem;
   color:black;
