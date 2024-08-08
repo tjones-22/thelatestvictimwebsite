@@ -68,17 +68,17 @@ const Images = () => {
   return (
     <>
     
-      <h2 className="title-h3">Knitting Factory: June 28th 2024</h2>
+      {/* <h2 className="title-h3">Knitting Factory: June 28th 2024</h2>
 
       {imagesLoading.knittingFactory && (
         <div className='loader'>
           <div className="custom-loader"></div>
         </div>
-      )}
-          {/* Knitt */}
+      )} */}
+          {/* Knitt
           <div className="scroll-container">
         <div className="image-container">
-          {imagesN.map((image, index) => (
+          {imagesK.map((image, index) => (
             <button
               className="photo"
               key={index}
@@ -94,7 +94,7 @@ const Images = () => {
             </button>
           ))}
         </div>
-      </div>
+      </div> */}
 
       <h2 className="title-h3">New Colony Beer Company: July 6th 2024</h2>
       {imagesLoading.newColony && (
