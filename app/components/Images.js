@@ -67,7 +67,7 @@ const Images = () => {
 
   return (
     <>
-    
+      <div>
       <h2 className="title-h3">Knitting Factory: June 28th 2024</h2>
 
       {imagesLoading.knittingFactory && (
@@ -95,7 +95,10 @@ const Images = () => {
           ))}
         </div>
       </div>
+      </div>
 
+
+      <div>
       <h2 className="title-h3">New Colony Beer Company: July 6th 2024</h2>
       {imagesLoading.newColony && (
         <div className='loader'>
@@ -122,7 +125,7 @@ const Images = () => {
           ))}
         </div>
       </div>
-
+      </div>
 
       {/* modal */}
 
