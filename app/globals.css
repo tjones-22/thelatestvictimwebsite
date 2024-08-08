@@ -555,7 +555,7 @@ padding: 1.5rem;
     margin-left: 0; /* Adjust margin for very small screens */
   }
   .song-card{
-    height:100vh;
+    padding-bottom: 50px;
   }
   #image-container::-webkit-scrollbar {
     height: 10px;
