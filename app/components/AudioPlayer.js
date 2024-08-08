@@ -50,7 +50,7 @@ const AudioPlayer = () => {
     if (sound) {
       sound.mute(false); // Unmute the audio
       sound.play();
-  
+      console.log("Playing")
       intervalRef.current = setInterval(updateProgress, 1000); // Update progress every second
     }
   };
