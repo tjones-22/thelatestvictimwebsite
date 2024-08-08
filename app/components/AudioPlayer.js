@@ -12,7 +12,7 @@ const AudioPlayer = () => {
 
   useEffect(() => {
     const newSound = new Howl({
-      src: ['/audio/Bleeding_Eyes.mp3', ], 
+      src: ['/audio/Bleeding_Eyes_Short.wav', ], 
       volume:1.0,
       onload: () => {
         setDuration(newSound.duration());
@@ -134,6 +134,10 @@ const AudioPlayer = () => {
       <div>
         {Math.floor(currentTime / 60)}:{('0' + Math.floor(currentTime % 60)).slice(-2)} / {Math.floor(duration / 60)}:{('0' + Math.floor(duration % 60)).slice(-2)}
       </div>
+
+      <audio id="audio-player" src="path/to/Bleeding_Eyes.mp3" type="audio/mpeg" controls>
+     
+      </audio>
     </div>
   );
 };
