@@ -533,7 +533,7 @@ padding: 1.5rem;
    }
    #member-card{
     width:70vw;
-    padding: 10px;
+    height: 1000px;
   }
    #member-card > img{
     width:500px;
@@ -563,5 +563,9 @@ padding: 1.5rem;
   .scroll-container{
     margin-bottom: 5vh;
     border-bottom: 2px solid blueviolet;
+  }
+  #member-card > img{
+    width: 400px;
+    height: 450px;
   }
 }
