@@ -12,7 +12,7 @@ const AudioPlayer = () => {
 
   useEffect(() => {
     const newSound = new Howl({
-      src: ['/audio/Bleeding_Eyes_Short.wav', ], 
+      src: ['/audio/Bleeding_Eyes.mp3', ], 
       volume:1.0,
       onload: () => {
         setDuration(newSound.duration());
