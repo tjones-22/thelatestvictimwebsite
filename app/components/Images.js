@@ -67,7 +67,7 @@ const Images = () => {
 
   return (
     <>
-      <div>
+      
       <h2 className="title-h3">Knitting Factory: June 28th 2024</h2>
 
       {imagesLoading.knittingFactory && (
@@ -75,7 +75,7 @@ const Images = () => {
           <div className="custom-loader"></div>
         </div>
       )}
-          Knitt
+          <div className='mb-[10vh]'></div>
           <div className="scroll-container">
         <div className="image-container">
           {imagesK.map((image, index) => (
@@ -95,10 +95,7 @@ const Images = () => {
           ))}
         </div>
       </div>
-      </div>
 
-
-      <div>
       <h2 className="title-h3">New Colony Beer Company: July 6th 2024</h2>
       {imagesLoading.newColony && (
         <div className='loader'>
@@ -125,7 +122,7 @@ const Images = () => {
           ))}
         </div>
       </div>
-      </div>
+
 
       {/* modal */}
 
