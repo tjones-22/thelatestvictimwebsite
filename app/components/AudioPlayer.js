@@ -136,7 +136,7 @@ const AudioPlayer = () => {
       </div>
 
       <audio controls>
-      <source src="/audio/Bleeding_Eye_Shorts.wav" type="audio/mpeg" />
+      <source src="/audio/Bleeding_Eye_Short.wav" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
     </div>
