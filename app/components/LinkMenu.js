@@ -28,7 +28,7 @@ const LinkMenu = ({ isOpen, toggleMenu }) => {
         <nav id="aside-links-div"className="flex flex-col space-y-4">
             <Link href="/" className=" link ">Home</Link>
             <Link href="/shows" className=" link ">Shows</Link>
-            <Link href="/services" className=" link ">Merch</Link>
+            <Link href="/merch" className=" link ">Merch</Link>
         </nav>
 
         <div id="socials-aside"className="mt-5">

@@ -134,11 +134,6 @@ const AudioPlayer = () => {
       <div>
         {Math.floor(currentTime / 60)}:{('0' + Math.floor(currentTime % 60)).slice(-2)} / {Math.floor(duration / 60)}:{('0' + Math.floor(duration % 60)).slice(-2)}
       </div>
-
-      <audio controls>
-      <source src="/audio/Bleeding_Eye_Short.wav" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
     </div>
   );
 };

@@ -109,7 +109,7 @@ export default function Home() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/merch"
                 className="link"
               >
                 Merch

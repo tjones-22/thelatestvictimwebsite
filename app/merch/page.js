@@ -1,13 +1,12 @@
 
-
 import Image from "next/image"
 import Link from "next/link"
 
-export default function Tours(){
+
+export default function Merch(){
     return (
         <>
-
-<div className="links-div">
+         <div className="links-div">
           <div
             initial={{ y: 5250 }}
             animate={{ y: -10 }}
@@ -107,7 +106,7 @@ export default function Tours(){
             </li>
           </ul>
         </div>
-        <h1 className="text-[20px] text-center text-white mt-[10vh]"> Currently there are no shows at this time</h1>
+        <h1 className="text-[20px] text-center text-white mt-[10vh]"> We are currently working on our merch store right now</h1>
         
         </>
     )
