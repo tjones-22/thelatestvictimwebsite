@@ -419,7 +419,7 @@ export default function Home() {
         />
         <h3>Tristan Jones</h3>
         <div className='content'>
-        <p><em>Influences:</em> Avenged Sevenfold, All that Remains, Ghost, Breaking Benjaman, Metallica, Three Days Grace, Slipknot, Trivuim Pink Floyd</p>
+        <p><em>Influences:</em> Avenged Sevenfold, All that Remains, Ghost, Breaking Benjaman, Metallica, Three Days Grace, Slipknot, Trivuim, Pink Floyd</p>
 
         </div>
         <h3><em>Contact:</em></h3>

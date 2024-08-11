@@ -106,7 +106,7 @@ export default function Merch(){
             </li>
           </ul>
         </div>
-        <h1 className="text-[20px] text-center text-white mt-[10vh]"> We are currently working on our merch store right now</h1>
+        <h1 className="text-[20px] text-center text-white mt-[10vh]"> Check back soon 😀</h1>
         
         </>
     )

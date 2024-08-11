@@ -8,7 +8,7 @@ const AudioPlayer = () => {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const progressBarRef = useRef(null);
-  const intervalRef = useRef(null); // Ref to manage the interval
+  const intervalRef = useRef(null); 
 
   useEffect(() => {
     const newSound = new Howl({
@@ -27,7 +27,7 @@ const AudioPlayer = () => {
         console.log("Audio ended");
         setIsPlaying(false);
         setCurrentTime(0);
-        clearInterval(intervalRef.current); // Clear the interval
+        clearInterval(intervalRef.current); 
       },
       onloaderror: (id, error) => {
         console.error(`Failed to load sound: ${error}`);
@@ -42,16 +42,16 @@ const AudioPlayer = () => {
       if (newSound) {
         newSound.unload();
       }
-      clearInterval(intervalRef.current); // Clear the interval on unmount
+      clearInterval(intervalRef.current); 
     };
   }, []);
 
   const playAudio = () => {
     if (sound) {
-      sound.mute(false); // Unmute the audio
+      sound.mute(false); 
       sound.play();
       console.log("Playing")
-      intervalRef.current = setInterval(updateProgress, 1000); // Update progress every second
+      intervalRef.current = setInterval(updateProgress, 1000); 
     }
   };
   
@@ -59,7 +59,7 @@ const AudioPlayer = () => {
   const pauseAudio = () => {
     if (sound) {
       sound.pause();
-      clearInterval(intervalRef.current); // Clear the interval
+      clearInterval(intervalRef.current); 
     }
   };
 
@@ -69,7 +69,7 @@ const AudioPlayer = () => {
       setCurrentTime(sound.seek());
     } else {
       console.log("Audio is not playing");
-      clearInterval(intervalRef.current); // Clear the interval if audio is not playing
+      clearInterval(intervalRef.current); 
     }
   };
 
@@ -82,7 +82,7 @@ const AudioPlayer = () => {
       sound.seek(newTime);
       setCurrentTime(newTime);
       if (!sound.playing()) {
-        // Ensure progress bar updates immediately when clicking while paused
+        
         updateProgress();
       }
     }
