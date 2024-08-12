@@ -259,7 +259,7 @@ section{
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  background-image: url("/images/TextureRed.jpeg");
+  background-image: url("/images/GreyTexture.jpeg");
   object-fit: cover;
   color: white;
   margin-right: 10px;
