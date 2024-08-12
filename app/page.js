@@ -21,7 +21,7 @@ const courier = Courier_Prime({
 export default function Home() {
   
   return (
-    <>
+    < >
     <div className="links-div">
           <div
             initial={{ y: 5250 }}
@@ -123,7 +123,7 @@ export default function Home() {
           </ul>
     </div>
 
-    <section className="logo">
+    <section  className="logo">
       <Image
       src="/images/Logo.PNG"
       alt="Logo"
