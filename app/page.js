@@ -125,7 +125,7 @@ export default function Home() {
 
     <section className="logo">
       <Image
-      src="/images/Logo.png"
+      src="/images/Logo.PNG"
       alt="Logo"
       height={400}
       width={400}
