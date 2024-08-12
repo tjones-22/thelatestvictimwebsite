@@ -150,6 +150,12 @@ section{
   background-color: rgb(38, 38, 38);
   margin-top: 15vh;
 }
+.logo>img{
+    transition: 0.4s cubic-bezier(0.26, 0.84, 0.58, 1);
+}
+.logo>img:hover{
+  transform: scale(1.05);
+}
 #song-section{
   flex-direction: column;
   justify-content: space-around;
