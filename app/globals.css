@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
   --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -22,6 +24,12 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.paragraph,p{
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #menu-icon{
@@ -72,24 +80,7 @@ section{
 }
 /* navbar styles */
 
-.video-background {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Adjust height as needed */
-  overflow: hidden;
-}
 
-.video-background video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: -1; /* Place video behind content */
-}
 
 .navbar{
   background-image: url('/images/BandPhoto.jpg');
@@ -147,7 +138,17 @@ section{
 
 
 /* main content styles */
-
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  padding:1.5rem;
+  background-color: rgb(57, 56, 56);
+  margin-top: 15vh;
+}
 #song-section{
   flex-direction: column;
   justify-content: space-around;
@@ -258,11 +259,13 @@ section{
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  background-color: rgb(54, 69, 79);
+  background-image: url("/images/TextureRed.jpeg");
+  object-fit: cover;
   color: white;
   margin-right: 10px;
   flex: 0 0 auto; /* Ensure cards don't shrink */
   scroll-snap-align: start;
+  
 
 }
 #member-card > img{
@@ -271,6 +274,9 @@ section{
   height:350px;
   object-fit: contain;
   
+}
+#member-card > p{
+  font-size: 50px;
 }
 .content{
 display: flex;

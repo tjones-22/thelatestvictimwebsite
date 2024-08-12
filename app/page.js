@@ -2,6 +2,7 @@
 "use client"
 
 import { Roboto } from 'next/font/google';
+import { Courier_Prime } from 'next/font/google';
 import Image from 'next/image';
 import AudioPlayer from './components/AudioPlayer';
 import Link from 'next/link';
@@ -12,6 +13,10 @@ const roboto = Roboto({
   weight: "400",
 });
 
+const courier = Courier_Prime({
+  subsets:['latin'],
+  weight:"400"
+});
 
 export default function Home() {
   
@@ -116,13 +121,22 @@ export default function Home() {
               </Link>
             </li>
           </ul>
-        </div>
+    </div>
 
-    <section id="song-section" className={roboto.className}>
+    <section className="logo">
+      <Image
+      src="/images/Logo.png"
+      alt="Logo"
+      height={400}
+      width={400}
+      />
+    </section>
+
+    <section id="song-section" >
       <h2 className='text-4xl font-bold text-center  mt-[10vh] mb-[5vh]'> Check out our latest single</h2>
 
-        <div className="song-card">
-          <Image
+        <div className="song-card" >
+          <Image 
           src="/images/BleedingEyes.jpg"
           height={200}
           width={200}
@@ -135,7 +149,7 @@ export default function Home() {
 
           
           <div className="streaming-link-container" >
-          <h3>Avalible on :</h3>
+          <h3 className='paragraph'>Avalible on :</h3>
             <div className="icon-animation streaming-links">
             <a href="https://open.spotify.com/track/0DE3Pw8j0iKJvDtJ9iPg39?si=BG3zqvkSRcaxbb70sX7jNQ&utm_medium=share&utm_source=linktree&nd=1&dlsi=6ad5197f7459494a"target="_blank">
 
