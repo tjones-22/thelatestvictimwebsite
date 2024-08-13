@@ -83,7 +83,7 @@ const Images = () => {
                   alt={image.alt}
                   width={200}
                   height={200}
-                  onLoadingComplete={handleImageLoad}
+                  onLoad={handleImageLoad}
                   loading='lazy'
                 />
               </button>
@@ -110,7 +110,7 @@ const Images = () => {
                 alt={image.alt}
                 width={200}
                 height={200}
-                onLoadingComplete={handleImageLoad}
+                onLoad={handleImageLoad}
                 loading='lazy'
               />
             </button>
@@ -138,7 +138,7 @@ const Images = () => {
                 alt={image.alt}
                 width={200}
                 height={200}
-                onLoadingComplete={handleImageLoad}
+                onLoad={handleImageLoad}
                 loading='lazy'
               />
             </button>
@@ -162,7 +162,6 @@ const Images = () => {
                 alt="Selected"
                 width={window.innerWidth} 
                 height={window.innerHeight} 
-                layout='intrinsic'
                 onLoad={() => setLoading(false)}
                 className='img'
               />

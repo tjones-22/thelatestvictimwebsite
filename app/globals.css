@@ -144,10 +144,10 @@ section{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 400px;
+ 
   padding:1.5rem;
-  background-color: rgb(38, 38, 38);
+  background-image: url("/images/GreyTexture.jpeg");
+  object-fit: contain;
   margin-top: 15vh;
 }
 .logo>img{
@@ -725,5 +725,13 @@ footer{
   }
   #members-section{
     margin-left: 15vw;
+  }
+  footer> h2{
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .footer-links-icons{
+    width: 100%;
   }
 }

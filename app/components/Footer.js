@@ -6,7 +6,7 @@ const Footer = () => {
         <>
         <footer>
             <div className="footer-links-icons icon-animation">
-                <h2>Visit us on:</h2>
+                <h2 className="w-full text-2xl text-center text-white mt-10vh">Visit us on:</h2>
                 <div className="links-div">
 
                     <a href="https://www.facebook.com/thelatestvictim" target="_blank">

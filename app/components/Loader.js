@@ -7,8 +7,8 @@ const Loader = () => {
             <div className="loader-div">
                 <div className="custom-loader-words">
 
-                    <div class="loader">
-                    <div data-glitch="Loading..." class="glitch">Loading...</div>
+                    <div className="loader">
+                    <div data-glitch="Loading..." className="glitch">Loading...</div>
 
                   
 
