@@ -42,73 +42,74 @@ export default function Home() {
     
     
 
-    <section  className="logo">
-      <Image
+  <section  className="logo">
+    <Image
       src="/images/Logo.PNG"
       alt="Logo"
       height={400}
       width={400}
       priority={true}
-      />
-    </section>
+    />
+  </section>
 
-    <section id="song-section" >
-      <h2 className='text-4xl font-bold text-center  mt-[10vh] mb-[5vh]'> Check out our latest single</h2>
+  <section id="song-section" >
+    <h2 className='text-4xl font-bold text-center  mt-[10vh] mb-[5vh]'> Check out our latest single</h2>
 
-        <div className="song-card" >
-          <Image 
+      <div className="song-card" >
+        <Image 
           src="/images/BleedingEyes.jpg"
           height={200}
           width={200}
           alt="Song Art"
-          />
-          <div className="song-data">         
-            <h3 id="song-title"> Bleeding Eyes</h3>
+        />
+        <div className="song-data">         
+          <h3 id="song-title"> Bleeding Eyes</h3>
 
-            <AudioPlayer />
+          <AudioPlayer />
 
           
           <div className="streaming-link-container" >
-          <h3 className='paragraph'>Avalible on :</h3>
+            <h3 className='paragraph'>Avalible on :</h3>
             <div className="icon-animation streaming-links">
-            <a href="https://open.spotify.com/track/0DE3Pw8j0iKJvDtJ9iPg39?si=BG3zqvkSRcaxbb70sX7jNQ&utm_medium=share&utm_source=linktree&nd=1&dlsi=6ad5197f7459494a"target="_blank">
+              <a href="https://open.spotify.com/track/0DE3Pw8j0iKJvDtJ9iPg39?si=BG3zqvkSRcaxbb70sX7jNQ&utm_medium=share&utm_source=linktree&nd=1&dlsi=6ad5197f7459494a"target="_blank">
 
-              <Image
-              src="/Icons/SC.png"
-              alt="Spoitfy"
-              height={40}
-              width={40}
-              />
-            </a>
+                <Image
+                src="/Icons/SC.png"
+                alt="Spoitfy"
+                height={40}
+                width={40}
+                />
+              </a>
 
-            <a href="https://www.youtube.com/watch?v=zg0bflFlCzs" target="_blank">
+              <a href="https://www.youtube.com/watch?v=zg0bflFlCzs" target="_blank">
 
-              <Image
-              src="/Icons/YTC.png"
-              alt="Youtube"
-              height={40}
-              width={40}
-              />
-            </a>
-           
+                <Image
+                src="/Icons/YTC.png"
+                alt="Youtube"
+                height={40}
+                width={40}
+                />
+              </a>
+            
 
-            <a href="https://music.apple.com/us/album/bleeding-eyes/1754315139?i=1754315140&at=1000lHKX&ct=linktree_http&itsct=lt_m&itscg=30200&ls=1" target="_blank">
+              <a href="https://music.apple.com/us/album/bleeding-eyes/1754315139?i=1754315140&at=1000lHKX&ct=linktree_http&itsct=lt_m&itscg=30200&ls=1" target="_blank">
 
-              <Image
-              src="/Icons/AMC.png"
-              alt="Apple Music"
-              height={40}
-              width={40}
-              />
-            </a>
+                <Image
+                src="/Icons/AMC.png"
+                alt="Apple Music"
+                height={40}
+                width={40}
+                />
+              </a>
             </div>
-          </div>
+            </div>
           </div>
           
         </div>
         
         
     </section>
+
     <h2 className='text-center'> The Band</h2>
     
     <section id="members-section">
