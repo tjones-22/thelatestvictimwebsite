@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="navbar">
       <div>
             <button onClick={toggleMenu}>
-              <Image
+              <img
                 src="/Icons/HamburgerIcon.png"
                 alt="Menu Icon"
                 width={50}
@@ -44,7 +44,7 @@ const Navbar = () => {
             id="socials"className="icon-animation  flex flex-row items-center justify-evenly w-[50vw]">
             <a href="https://www.facebook.com/thelatestvictim" target="_blank">
               
-              <Image
+              <img
               src="/Icons/FC.png"
               alt="Facebook"
               height={40}
@@ -55,7 +55,7 @@ const Navbar = () => {
 
             <a href="https://www.instagram.com/thelatestvictim?igsh=MWJucDZ6NDBqZWltZw%3D%3D" target="_blank">
               
-              <Image
+              <img
               src="/Icons/IC.png"
               alt="Instagram"
               height={40}
@@ -65,7 +65,7 @@ const Navbar = () => {
 
             <a href="https://open.spotify.com/artist/3D4CF6gqkkZezog1u9iiSi?si=clFuULL3TrCiyDHEzpugRw"target="_blank">
 
-              <Image
+              <img
               src="/Icons/SC.png"
               alt="Spoitfy"
               height={40}
@@ -75,7 +75,7 @@ const Navbar = () => {
 
             <a href="https://www.youtube.com/channel/UC_P7pIIgrFcf5LTyvdWLoNw" target="_blank">
 
-              <Image
+              <img
               src="/Icons/YTC.png"
               alt="Youtube"
               height={40}
@@ -84,7 +84,7 @@ const Navbar = () => {
             </a>
             <a href="https://www.tiktok.com/@the.latest.victim?_t=8nYNFux77M2&_r=1" target="_blank">
 
-              <Image
+              <img
               src="/Icons/TT.png"
               alt="Tik Tok"
               height={40}
@@ -94,7 +94,7 @@ const Navbar = () => {
 
             <a href="https://music.apple.com/us/album/bleeding-eyes/1754315139?i=1754315140" target="_blank">
 
-              <Image
+              <img
               src="/Icons/AMC.png"
               alt="Tik Tok"
               height={40}

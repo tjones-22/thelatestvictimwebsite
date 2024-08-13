@@ -43,7 +43,7 @@ export default function Home() {
     
 
   <section  className="logo">
-    <Image
+    <img
       src="/images/Logo.PNG"
       alt="Logo"
       height={400}
@@ -56,7 +56,7 @@ export default function Home() {
     <h2 className='text-4xl font-bold text-center  mt-[10vh] mb-[5vh]'> Check out our latest single</h2>
 
       <div className="song-card" >
-        <Image 
+        <img
           src="/images/BleedingEyes.jpg"
           height={200}
           width={200}
@@ -73,7 +73,7 @@ export default function Home() {
             <div className="icon-animation streaming-links">
               <a href="https://open.spotify.com/track/0DE3Pw8j0iKJvDtJ9iPg39?si=BG3zqvkSRcaxbb70sX7jNQ&utm_medium=share&utm_source=linktree&nd=1&dlsi=6ad5197f7459494a"target="_blank">
 
-                <Image
+                <img
                 src="/Icons/SC.png"
                 alt="Spoitfy"
                 height={40}
@@ -83,7 +83,7 @@ export default function Home() {
 
               <a href="https://www.youtube.com/watch?v=zg0bflFlCzs" target="_blank">
 
-                <Image
+                <img
                 src="/Icons/YTC.png"
                 alt="Youtube"
                 height={40}
@@ -94,7 +94,7 @@ export default function Home() {
 
               <a href="https://music.apple.com/us/album/bleeding-eyes/1754315139?i=1754315140&at=1000lHKX&ct=linktree_http&itsct=lt_m&itscg=30200&ls=1" target="_blank">
 
-                <Image
+                <img
                 src="/Icons/AMC.png"
                 alt="Apple Music"
                 height={40}
@@ -115,7 +115,7 @@ export default function Home() {
     <section id="members-section">
      
       <div id="member-card">
-        <Image
+        <img
         src="/images/IndividualPhotos/WesIndividual.jpg"
         alt="Wes Anderson"
         width={200}
@@ -133,7 +133,7 @@ export default function Home() {
         <div id="socials-container">
 
           <div id="social-container">
-            <Image
+            <img
             src="/Icons/IC.png"
             alt="Instagram"
             width={50}
@@ -146,7 +146,7 @@ export default function Home() {
           </div>
 
           <div id="social-container">
-            <Image
+            <img
             src="/Icons/FC.png"
             alt="Facebook"
             width={50}
@@ -159,7 +159,7 @@ export default function Home() {
           </div>
 
           <div id="social-container">
-            <Image
+            <img
             src="/Icons/EmailC.png"
             alt="Email"
             width={50}
@@ -176,7 +176,7 @@ export default function Home() {
       </div>
 
       <div id="member-card">
-        <Image
+        <img
         src="/images/IndividualPhotos/AustinIndividual.jpg"
         alt="Austin Lawshe"
         width={200}
@@ -193,7 +193,7 @@ export default function Home() {
         <div id="socials-container">
 
           <div id="social-container">
-            <Image
+            <img
             src="/Icons/IC.png"
             alt="Instagram"
             width={50}
@@ -204,7 +204,7 @@ export default function Home() {
           </div>
 
           <div id="social-container">
-            <Image
+            <img
             src="/Icons/FC.png"
             alt="Facebook"
             width={50}
@@ -217,7 +217,7 @@ export default function Home() {
           </div>
 
           <div id="social-container">
-            <Image
+            <img
             src="/Icons/EmailC.png"
             alt="Email"
             width={50}
@@ -233,7 +233,7 @@ export default function Home() {
       </div>
 
       <div id="member-card">
-        <Image
+        <img
         src="/images/IndividualPhotos/BrendanIndividual.jpg"
         alt="Brendan Herb"
         width={200}
@@ -250,7 +250,7 @@ export default function Home() {
         <div id="socials-container">
 
           <div id="social-container">
-            <Image
+            <img
             src="/Icons/IC.png"
             alt="Instagram"
             width={50}
@@ -261,7 +261,7 @@ export default function Home() {
           </div>
 
           <div id="social-container">
-            <Image
+            <img
             src="/Icons/FC.png"
             alt="Facebook"
             width={50}
@@ -274,7 +274,7 @@ export default function Home() {
           </div>
 
           <div id="social-container">
-            <Image
+            <img
             src="/Icons/EmailC.png"
             alt="Email"
             width={50}
@@ -290,7 +290,7 @@ export default function Home() {
       </div>
 
       <div id="member-card">
-        <Image
+        <img
         src="/images/IndividualPhotos/JustinIndividual.jpg"
         alt="Justin Fowler"
         width={200}
@@ -306,7 +306,7 @@ export default function Home() {
         <div id="socials-container">
 
           <div id="social-container">
-            <Image
+            <img
             src="/Icons/IC.png"
             alt="Instagram"
             width={50}
@@ -317,7 +317,7 @@ export default function Home() {
           </div>
 
           <div id="social-container">
-            <Image
+            <img
             src="/Icons/FC.png"
             alt="Facebook"
             width={50}
@@ -330,7 +330,7 @@ export default function Home() {
           </div>
 
           <div id="social-container">
-            <Image
+            <img
             src="/Icons/EmailC.png"
             alt="Email"
             width={50}
@@ -346,7 +346,7 @@ export default function Home() {
       </div>
 
       <div id="member-card">
-        <Image
+        <img
         src="/images/IndividualPhotos/TristanIndividual.jpg"
         alt="Tristan Jones"
         width={200}
@@ -362,7 +362,7 @@ export default function Home() {
         <div id="socials-container">
 
           <div id="social-container">
-            <Image
+            <img
             src="/Icons/IC.png"
             alt="Instagram"
             width={50}
@@ -373,7 +373,7 @@ export default function Home() {
           </div>
 
           <div id="social-container">
-            <Image
+            <img
             src="/Icons/FC.png"
             alt="Facebook"
             width={50}
@@ -386,7 +386,7 @@ export default function Home() {
           </div>
 
           <div id="social-container">
-            <Image
+            <img
             src="/Icons/EmailC.png"
             alt="Email"
             width={50}

@@ -78,7 +78,7 @@ const Images = () => {
                 key={index}
                 onClick={() => handleImageClick(image.src)}
               >
-                <Image
+                <img
                   src={image.src}
                   alt={image.alt}
                   width={200}
@@ -105,7 +105,7 @@ const Images = () => {
               key={index}
               onClick={() => handleImageClick(image.src)}
             >
-              <Image
+              <img
                 src={image.src}
                 alt={image.alt}
                 width={200}
@@ -133,7 +133,7 @@ const Images = () => {
               key={index}
               onClick={() => handleImageClick(image.src)}
             >
-              <Image
+              <img
                 src={image.src}
                 alt={image.alt}
                 width={200}
@@ -157,7 +157,7 @@ const Images = () => {
               </div>
             )}
             <div className='img-div'>
-              <Image
+              <img
                 src={selectedImage}
                 alt="Selected"
                 width={window.innerWidth} 

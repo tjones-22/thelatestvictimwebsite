@@ -91,7 +91,7 @@ const AudioPlayer = () => {
       <div className="controls">
         <button onClick={isPlaying ? pauseAudio : playAudio}>
           {isPlaying ? (
-            <Image
+            <img
               src="/Icons/Pause.png"
               alt="pause icon"
               width={20}
@@ -99,7 +99,7 @@ const AudioPlayer = () => {
               id="audio-icon"
             />
           ) : (
-            <Image
+            <img
               src="/Icons/Play.png"
               alt="play icon"
               width={20}
