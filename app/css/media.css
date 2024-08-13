@@ -1,0 +1,129 @@
+
+/* Optional: Add some responsiveness */
+@media (max-width: 768px) {
+    .modal-content {
+      max-width: 100vw;
+      max-height: 100vh;
+    }
+  }
+  
+  /* media queries  */
+  
+  @media(min-width:1001px){
+    .navbar{
+      background-size: cover;
+      padding:200px;
+     
+      
+    }
+   
+  #streaming-link-container{
+    width:40vw;
+  }
+  .photo{
+    width: 200px; 
+  }
+  
+    
+  }
+    @media(max-width:926px){
+     
+     
+     .navbar{
+      padding: 300px;
+      height: 20vh;
+     }
+      .links{
+        display: none;
+      }
+     
+  
+     #menu-icon{
+      display: block;
+      position: absolute;
+      top: 10px;
+      right:30px;
+     }
+     #socials{
+      display: none;
+     }
+     #social-container > a > p {
+      font-size:10px;
+     }
+     .streaming-link-container{
+      width:300px;
+     }  
+     .streaming-links{
+      width:50%
+     }
+     .streaming-link-container img{
+      transform: scale(0.5);
+     }
+     #members-section{
+      width:70vw;
+     }
+     
+     #member-card > img{
+      width:200px;
+      height: 250px;
+     }
+     #email{
+      font-size:9px;
+     }
+     .scroll-container{
+      margin-left: 0;
+     }
+     #members-section{
+      max-width: 100%;
+      margin-left: 15vw;
+      
+     }
+     #member-card{
+      width:70vw;
+      height: 1000px;
+    }
+     #member-card > img{
+      width:500px;
+      height: 550px;
+     }
+  }
+  
+  
+  
+  @media (max-width:390px) {
+    .navbar{
+      padding: 200px;
+    }
+  
+    #member-card{
+      margin-left: 16vw;
+    }
+    .scroll-container {
+      margin-left: 0; /* Adjust margin for very small screens */
+    }
+    .song-card{
+      padding-bottom: 50px;
+    }
+    #image-container::-webkit-scrollbar {
+      height: 10px;
+    }
+    .scroll-container{
+      margin-bottom: 5vh;
+      border-bottom: 2px solid red;
+    }
+    #member-card > img{
+      width: 400px;
+      height: 450px;
+    }
+    #members-section{
+      margin-left: 15vw;
+    }
+    footer> h2{
+      font-size: 15px;
+      width: 100%;
+    }
+  
+    .footer-links-icons{
+      width: 100%;
+    }
+  }
