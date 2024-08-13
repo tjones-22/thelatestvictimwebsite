@@ -84,6 +84,7 @@ const Images = () => {
                   width={200}
                   height={200}
                   onLoad={handleImageLoad}
+                  loading='lazy'
                 />
               </button>
             ))}
@@ -110,6 +111,7 @@ const Images = () => {
                   width={200}
                   height={200}
                   onLoad={handleImageLoad}
+                  loading='lazy'
                 />
               </button>
             ))}

@@ -1,12 +1,13 @@
 
 "use client"
-
+import { useState, useEffect } from 'react';
 import { Roboto } from 'next/font/google';
 import { Courier_Prime } from 'next/font/google';
 import Image from 'next/image';
 import AudioPlayer from './components/AudioPlayer';
 import Link from 'next/link';
 import Images from './components/Images';
+import Loader from './components/Loader';
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -19,9 +20,26 @@ const courier = Courier_Prime({
 });
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+
+  useEffect(() => {
+    // Simulate a loading state
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000); // Adjust the delay as needed
+
+    return () => clearTimeout(timer); // Cleanup the timer on unmount
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   
   return (
     < >
+    
     <div className="links-div">
           <div
             initial={{ y: 5250 }}
@@ -189,7 +207,7 @@ export default function Home() {
         
         
     </section>
-    <h2 className='text-center'> Our Members</h2>
+    <h2 className='text-center'> The Band</h2>
     
     <section id="members-section">
      
@@ -481,18 +499,10 @@ export default function Home() {
     </section>
 
     <section className="media">
-    <h2> Photos</h2>
-    <Images />
+      <h2> Photos</h2>
+      <Images />
     </section>
 
-
-    {/* <section id="footer">
-        <form id="newsletter-container">
-          <label htmlFor="newsletter-input"><h2>Sign up for our newsletter</h2></label>
-          <input type="email" name="newsletter-input" placeholder='youremail@domain.com'></input>
-        </form>
-      
-    </section> */}
     </>
   );
 }
