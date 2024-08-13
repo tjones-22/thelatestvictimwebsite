@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Cinzel } from "next/font/google";
 import Image from "next/image";
 import { useState } from "react";
-import Aside from "./LinkMenu";
+import Aside from "./Aside";
 
 const cinzel = Cinzel({
   subsets: ["latin"],
