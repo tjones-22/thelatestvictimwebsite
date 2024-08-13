@@ -6,14 +6,14 @@ const AudioPlayer = () => {
   const [sound, setSound] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
-  const [duration, setDuration] = useState(0);
+  const [duration, setDuration] = useState(null); // Initialize as null to indicate loading
   const progressBarRef = useRef(null);
   const intervalRef = useRef(null); 
 
   useEffect(() => {
     const newSound = new Howl({
-      src: ['/audio/Bleeding_Eyes_Short.wav', ], 
-      volume:1.0,
+      src: ['/audio/Bleeding_Eyes_Short.wav'],
+      volume: 1.0,
       onload: () => {
         setDuration(newSound.duration());
       },
@@ -48,13 +48,12 @@ const AudioPlayer = () => {
 
   const playAudio = () => {
     if (sound) {
-      sound.mute(false); 
+      sound.mute(false);
       sound.play();
-      console.log("Playing")
+      console.log("Playing");
       intervalRef.current = setInterval(updateProgress, 1000); 
     }
   };
-  
 
   const pauseAudio = () => {
     if (sound) {
@@ -82,7 +81,6 @@ const AudioPlayer = () => {
       sound.seek(newTime);
       setCurrentTime(newTime);
       if (!sound.playing()) {
-        
         updateProgress();
       }
     }
@@ -132,7 +130,9 @@ const AudioPlayer = () => {
         />
       </div>
       <div className='paragraph'>
-        {Math.floor(currentTime / 60)}:{('0' + Math.floor(currentTime % 60)).slice(-2)} / {Math.floor(duration / 60)}:{('0' + Math.floor(duration % 60)).slice(-2)}
+        {duration === null 
+          ? 'Loading...' 
+          : `${Math.floor(currentTime / 60)}:${('0' + Math.floor(currentTime % 60)).slice(-2)} / ${Math.floor(duration / 60)}:${('0' + Math.floor(duration % 60)).slice(-2)}`}
       </div>
     </div>
   );
