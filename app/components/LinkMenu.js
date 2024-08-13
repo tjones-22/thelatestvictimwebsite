@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const LinkMenu = ({ isOpen, toggleMenu }) => {
+const Aside = ({ isOpen, toggleMenu }) => {
     if (!isOpen) return null;
 
     // Define a function to handle link clicks and close the menu
@@ -33,7 +33,7 @@ const LinkMenu = ({ isOpen, toggleMenu }) => {
                 <Link href="/merch" className="link" onClick={handleLinkClick}>Merch</Link>
             </nav>
 
-            <div id="socials-aside" className="mt-5">
+            <div id="socials-aside" className=" icon-animation mt-5">
                 <a href="https://www.facebook.com/thelatestvictim" target="_blank" rel="noopener noreferrer">
                     <Image
                         src="/Icons/FC.png"
@@ -90,4 +90,4 @@ const LinkMenu = ({ isOpen, toggleMenu }) => {
     );
 };
 
-export default LinkMenu;
+export default Aside;

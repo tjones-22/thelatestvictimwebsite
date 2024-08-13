@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Cinzel } from "next/font/google";
 import Image from "next/image";
 import { useState } from "react";
-import LinkMenu from "./LinkMenu";
+import Aside from "./LinkMenu";
 
 const cinzel = Cinzel({
   subsets: ["latin"],
@@ -33,7 +33,7 @@ const Navbar = () => {
               />
             </button>
           </div>
-        {menu && <LinkMenu isOpen={menu} toggleMenu={toggleMenu} />}
+        {menu && <Aside isOpen={menu} toggleMenu={toggleMenu} />}
       </div>
 
       <div className="links-div">
