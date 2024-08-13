@@ -454,20 +454,26 @@ padding: 1.5rem;
  
 }
 
-.loader-div{
+/* Loader container */
+.loader-div {
+  position: fixed; /* Change to fixed to cover the whole viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  width: 100%;
-  height: 100%;
+  align-items: center;
+  justify-content: center;
   background-color: #000;
-
-}
-.custom-loader{
-  position: absolute;
-  top:50;
-  left:100;
-
+  z-index: 9999; /* Make sure it's above other content */
 }
 
+/* Loader content (optional styling for text or other elements) */
+.custom-loader-words {
+  color: #fff; /* Example text color */
+  font-size: 24px;
+  text-align: center;
+}
 
 /* imported from  uiverse.io */
 /* From Uiverse.io by andrew-demchenk0 */ 

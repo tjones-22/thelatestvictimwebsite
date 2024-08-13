@@ -70,7 +70,7 @@ const Images = () => {
       <h2 className="title-h3">Knitting Factory: June 28th 2024</h2>
 
           
-        <div className="scroll-container hide">
+      <div className="scroll-container hide">
           <div className="image-container">
             {imagesK.map((image, index) => (
               <button
@@ -83,7 +83,7 @@ const Images = () => {
                   alt={image.alt}
                   width={200}
                   height={200}
-                  onLoad={handleImageLoad}
+                  onLoadingComplete={handleImageLoad}
                   loading='lazy'
                 />
               </button>
@@ -97,34 +97,34 @@ const Images = () => {
         </div>
       )}
           
-        <div className="scroll-container">
-          <div className="image-container">
-            {imagesK.map((image, index) => (
-              <button
-                className="photo"
-                key={index}
-                onClick={() => handleImageClick(image.src)}
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={200}
-                  height={200}
-                  onLoad={handleImageLoad}
-                  loading='lazy'
-                />
-              </button>
-            ))}
-          </div>
+      <div className="scroll-container">
+        <div className="image-container">
+          {imagesK.map((image, index) => (
+            <button
+              className="photo"
+              key={index}
+              onClick={() => handleImageClick(image.src)}
+            >
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={200}
+                height={200}
+                onLoadingComplete={handleImageLoad}
+                loading='lazy'
+              />
+            </button>
+          ))}
+        </div>
       </div>
 
       <h2 className="title-h3">New Colony Beer Company: July 6th 2024</h2>
-      {imagesLoading.newColony && (
-        <div className='loader'>
-          <div className="custom-loader"></div>
-        </div>
-      )}
-       {/* New Colony */}
+        {imagesLoading.newColony && (
+          <div className='loader'>
+            <div className="custom-loader"></div>
+          </div>
+        )}
+       
       <div className="scroll-container">
         <div className="image-container">
           {imagesN.map((image, index) => (
@@ -138,7 +138,8 @@ const Images = () => {
                 alt={image.alt}
                 width={200}
                 height={200}
-                onLoad={handleImageLoad}
+                onLoadingComplete={handleImageLoad}
+                loading='lazy'
               />
             </button>
           ))}
@@ -147,8 +148,6 @@ const Images = () => {
 
 
       {/* modal */}
-
-
       {selectedImage && (
         <div className="modal" onClick={handleCloseModal}>
           <div className="modal-content">

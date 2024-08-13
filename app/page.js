@@ -147,6 +147,7 @@ export default function Home() {
       alt="Logo"
       height={400}
       width={400}
+      priority={true}
       />
     </section>
 
