@@ -4,7 +4,6 @@ import Image from "next/image";
 const Aside = ({ isOpen, toggleMenu }) => {
     if (!isOpen) return null;
 
-    // Define a function to handle link clicks and close the menu
     const handleLinkClick = () => {
         toggleMenu();
     };
@@ -35,7 +34,7 @@ const Aside = ({ isOpen, toggleMenu }) => {
 
             <div id="socials-aside" className=" icon-animation mt-5">
                 <a href="https://www.facebook.com/thelatestvictim" target="_blank" rel="noopener noreferrer">
-                    <Image
+                    <img
                         src="/Icons/FC.png"
                         alt="Facebook"
                         width={40}
@@ -44,7 +43,7 @@ const Aside = ({ isOpen, toggleMenu }) => {
                 </a>
 
                 <a href="https://www.instagram.com/thelatestvictim?igsh=MWJucDZ6NDBqZWltZw%3D%3D" target="_blank" rel="noopener noreferrer">
-                    <Image
+                    <img
                         src="/Icons/IC.png"
                         alt="Instagram"
                         width={40}
@@ -52,7 +51,7 @@ const Aside = ({ isOpen, toggleMenu }) => {
                     />
                 </a>
                 <a href="https://www.tiktok.com/@the.latest.victim?_t=8nYNFux77M2&_r=1" target="_blank" rel="noopener noreferrer">
-                    <Image
+                    <img
                         src="/Icons/TT.png"
                         alt="TikTok"
                         width={40}
@@ -61,7 +60,7 @@ const Aside = ({ isOpen, toggleMenu }) => {
                 </a>
 
                 <a href="https://open.spotify.com/artist/3D4CF6gqkkZezog1u9iiSi?si=clFuULL3TrCiyDHEzpugRw&nd=1&dlsi=b864df9ded254483" target="_blank" rel="noopener noreferrer">
-                    <Image
+                    <img
                         src="/Icons/SC.png"
                         alt="Spotify"
                         width={40}
@@ -70,7 +69,7 @@ const Aside = ({ isOpen, toggleMenu }) => {
                 </a>
 
                 <a href="https://music.apple.com/us/album/bleeding-eyes/1754315139?i=1754315140" target="_blank" rel="noopener noreferrer">
-                    <Image
+                    <img
                         src="/Icons/AMC.png"
                         alt="Apple Music"
                         width={40}
@@ -78,7 +77,7 @@ const Aside = ({ isOpen, toggleMenu }) => {
                     />
                 </a>
                 <a href="https://www.youtube.com/channel/UC_P7pIIgrFcf5LTyvdWLoNw" target="_blank" rel="noopener noreferrer">
-                    <Image
+                    <img
                         src="/Icons/YTC.png"
                         alt="YouTube"
                         width={40}
