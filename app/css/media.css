@@ -132,11 +132,7 @@
     }
     .streaming-link-container{
       width:100vw;
-     } 
-  
-    #member-card{
-      margin-left: 16vw;
-    }
+     }
     .scroll-container {
       margin-left: 0; 
     }
@@ -149,17 +145,21 @@
     .scroll-container{
       margin-bottom: 5vh;
       border-bottom: 2px solid red;
+      margin-left: 25vw;
+    }
+    
+   
+    #members-section{
+      margin-left: 15vw;
     }
     #member-card{
       padding:100px;
+     
      
     }
     #member-card > img{
       width: 400px;
       height: 450px;
-    }
-    #members-section{
-      margin-left: 15vw;
     }
     footer> h2{
       font-size: 15px;
@@ -168,5 +168,8 @@
   
     .footer-links-icons{
       width: 100%;
+    }
+    .navbar{
+      width: 150vw;
     }
   }
