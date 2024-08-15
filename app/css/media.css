@@ -109,7 +109,15 @@
     #member-card{
       width: 100vw;
     }
-    
+    .modal{
+      width:150vw
+    }
+    .modal-content {
+      max-width: 150vw;;
+    }
+    .img-div{
+      width:100%;
+    }
 
     footer{
       width:150vw;
