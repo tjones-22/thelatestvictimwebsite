@@ -91,18 +91,33 @@
      }
   }
   
+  @media(max-width:500px){
+    .logo{
+      width: 150vw;
+    }
+    .song-card{
+      width:200vw;
+      justify-content: center;
+    }
+    .song-card > img{
+      margin-left: 50vw;
+    }
+  }
   
   
   @media (max-width:390px) {
     .navbar{
       padding: 200px;
     }
+    .streaming-link-container{
+      width:100vw;
+     } 
   
     #member-card{
       margin-left: 16vw;
     }
     .scroll-container {
-      margin-left: 0; /* Adjust margin for very small screens */
+      margin-left: 0; 
     }
     .song-card{
       padding-bottom: 50px;
@@ -113,6 +128,10 @@
     .scroll-container{
       margin-bottom: 5vh;
       border-bottom: 2px solid red;
+    }
+    #member-card{
+      padding:100px;
+      color:red;
     }
     #member-card > img{
       width: 400px;

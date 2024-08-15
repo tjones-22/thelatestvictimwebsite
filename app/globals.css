@@ -126,8 +126,7 @@ section{
   display: flex;
   flex-flow: row;
   align-items: center;
-  padding-inline: 10px;
-  width:70%;
+  width:100%;
   margin-top: 10vh;
   font-size: 10px;
  
