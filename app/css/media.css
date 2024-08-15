@@ -144,13 +144,13 @@
     }
     .scroll-container{
       margin-bottom: 5vh;
-      border-bottom: 2px solid red;
+      width:150vw;
       
     }
     
    
     #members-section{
-      margin-left: 15vw;
+      margin-left: 25vw;
     }
     #member-card{
       padding:100px;
