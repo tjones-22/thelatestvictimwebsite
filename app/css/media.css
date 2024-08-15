@@ -7,14 +7,13 @@
     }
   }
   
-  /* media queries  */
-  
+ 
   @media(min-width:1001px){
     .navbar{
       background-size: cover;
-      padding:200px;
+      padding:300px;
      
-      
+
     }
    
   #streaming-link-container{
@@ -26,6 +25,15 @@
   
     
   }
+
+  @media(widh:1024px){
+    .navbar{
+      padding: 400px;
+    }
+  }
+
+  /* media queries  */
+  
     @media(max-width:926px){
      
      
@@ -109,6 +117,10 @@
     #member-card{
       width: 100vw;
     }
+    #member-card > img{
+      width:400px;
+      height:450px;
+    }
     .modal{
       width:150vw
     }
@@ -120,7 +132,7 @@
     }
 
     footer{
-      width:150vw;
+      width:155vw;
     }
     .h2-center{
       width: 150vw;
@@ -133,6 +145,13 @@
   
   
   @media (max-width:390px) {
+    img{
+      max-width: 150vw;
+    }
+    .content >{
+      font-size: 15px;
+      width: 100vw;
+    }
     .navbar{
       padding: 200px;
     }
@@ -158,12 +177,12 @@
     }
     #member-card{
       padding:100px;
-     
-     
+      height:1300px
+
     }
     #member-card > img{
-      width: 400px;
-      height: 450px;
+      width: 500px;
+      height: 550px;
     }
     footer> h2{
       font-size: 15px;
