@@ -110,9 +110,7 @@
       width: 100vw;
     }
     
-    .scroll-container{
-      margin-left: 25vw;
-    }
+
     footer{
       width:150vw;
     }
@@ -147,8 +145,6 @@
       width:150vw;
       
     }
-    
-   
     #members-section{
       margin-left: 25vw;
     }
@@ -171,5 +167,9 @@
     }
     .navbar{
       width: 150vw;
+    }
+    .photo {
+      width:200px;
+      height: 200px;
     }
   }
