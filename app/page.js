@@ -53,7 +53,7 @@ export default function Home() {
   </section>
 
   <section id="song-section" >
-    <h2 className='text-4xl font-bold text-center  mt-[10vh] mb-[5vh]'> Check out our latest single</h2>
+    <h2 className=' h2-center  margin-left text-4xl font-bold text-center  mt-[10vh] mb-[5vh]'> Check out our latest single</h2>
 
       <div className="song-card" >
         <img
@@ -110,7 +110,7 @@ export default function Home() {
         
     </section>
 
-    <h2 className='text-center'> The Band</h2>
+    <h2 className=' h2-center text-center'> The Band</h2>
     
     <section id="members-section">
      

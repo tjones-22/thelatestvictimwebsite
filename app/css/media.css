@@ -102,6 +102,27 @@
     .song-card > img{
       margin-left: 50vw;
     }
+    #members-section{
+      width:150vw;
+      margin-left: 25vw;
+    }
+    #member-card{
+      width: 100vw;
+    }
+    
+    .scroll-container{
+      margin-left: 25vw;
+    }
+    footer{
+      width:150vw;
+    }
+    .h2-center{
+      width: 150vw;
+      color:red;
+    }
+    .margin-left{
+      margin-left: 40vw;
+    }
   }
   
   
