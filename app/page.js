@@ -20,11 +20,20 @@ const courier = Courier_Prime({
   weight:"400"
 });
 
+
 export default function Home() {
   const [loading, setLoading] = useState(true);
   const [image,setImage]= useState();
   const [video,setVideo] = useState();
-
+  
+  const handleImage = () => {
+    setVideo(false);
+    setImage(true);
+  ;}
+  const handleVideo = () => {
+    setImage(false);
+    setVideo(true);
+  ;}
 
   useEffect(() => {
     setImage(true);
@@ -407,10 +416,18 @@ export default function Home() {
     </section>
 
     <section className="media">
-        <button onClick={()=>{setVideo(false); setImage(true);  }}> <h2> Photos</h2></button>
-        <button onClick={() => {setImage(false);setVideo(true); }}><h2> Videos</h2></button>
-      {image && <Image />}
-      {video && <Videos />}
+      <div className='button-container'>
+      <div className="container-button">
+        <button className="button" onClick={handleImage}>Photos</button>
+      </div>
+
+      <div className="container-button">
+        <button className="button" onClick={handleVideo}>Videos</button>
+      </div>
+      </div>
+      
+      {!image && <Image />}
+      {!video && <Videos />}
     </section>
 
     </>
