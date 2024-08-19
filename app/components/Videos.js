@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from 'react';
 import 'video.js/dist/video-js.css';
 import videojs from 'video.js';
@@ -7,7 +8,8 @@ const Videos = () => {
   const [videosK, setVideosK] = useState([]);
   const [videosN, setVideosN] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [videoLoaded, setVideoLoaded] = useState(false); // New state for video loaded
   const [videosLoading, setVideosLoading] = useState({
     knittingFactory: true,
     newColony: true
@@ -41,6 +43,8 @@ const Videos = () => {
 
   useEffect(() => {
     if (selectedVideo) {
+      setVideoLoaded(false); // Reset video loaded state
+
       const player = videojs('video-player', {
         controls: true,
         autoplay: true,
@@ -50,9 +54,9 @@ const Videos = () => {
 
       player.src({ src: selectedVideo, type: 'video/mp4' });
 
-      // Listen for the `canplay` event to hide the loader
-      player.on('canplay', () => {
-        setLoading(false);
+      player.on('loadeddata', () => {
+        setLoading(false); // Hide loader
+        setVideoLoaded(true); // Show video
       });
 
       return () => {
@@ -70,7 +74,8 @@ const Videos = () => {
 
   const handleCloseModal = () => {
     setSelectedVideo(null);
-    setLoading(false); // Hide loader when closing the modal
+    setLoading(true); // Reset loading state
+    setVideoLoaded(false); // Hide video
   };
 
   return (
@@ -132,23 +137,24 @@ const Videos = () => {
       {selectedVideo && (
         <div className="modal" onClick={handleCloseModal}>
           <div className="modal-content" onClick={e => e.stopPropagation()}>
-            {loading && (
+            {loading && !videoLoaded && (
               <div className='loader'>
                 <div className="custom-loader"></div>
               </div>
             )}
             <div className="video-container">
-              <video
-                id="video-player"
-                className="  video-js vjs-default-skin video"
-                controls
-                autoPlay
-                preload="auto"
-                onCanPlay={() => setLoading(false)}
-              >
-                <source src={selectedVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              {videoLoaded && (
+                <video
+                  id="video-player"
+                  className="video-js vjs-default-skin"
+                  controls
+                  autoPlay
+                  preload="auto"
+                >
+                  <source src={selectedVideo} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              )}
             </div>
           </div>
         </div>
