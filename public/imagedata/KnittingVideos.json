@@ -1,62 +1,55 @@
 [
     {
       "src": "/videos/KnittingFactory/VID1.mp4",
-      "thumbnail": "/videos/thumbnails/KnittingFactory/VID1_thumbnail.jpg",
-      "alt": "Knitting Factory Show - June 28th 2024"
+      "thumbnail": "/videos/thumbnails/KnittingFactory/VID1_thumbnail.png",
+      "alt": "Knitting Factory Show - June 28th 2024",
+      "rotate": "false"
     },
     {
       "src": "/videos/KnittingFactory/VID2.mp4",
-      "thumbnail": "/videos/thumbnails/KnittingFactory/VID2_thumbnail.jpg",
-      "alt": "Knitting Factory Show - June 28th 2024"
+      "thumbnail": "/videos/thumbnails/KnittingFactory/VID2_thumbnail.png",
+      "alt": "Knitting Factory Show - June 28th 2024",
+      "rotate": "false"
     },
     {
       "src": "/videos/KnittingFactory/VID3.mp4",
-      "thumbnail": "/videos/thumbnails/KnittingFactory/VID3_thumbnail.jpg",
-      "alt": "Knitting Factory Show - June 28th 2024"
+      "thumbnail": "/videos/thumbnails/KnittingFactory/VID3_thumbnail.png",
+      "alt": "Knitting Factory Show - June 28th 2024",
+      "rotate": "false"
     },
     {
       "src": "/videos/KnittingFactory/VID4.mp4",
-      "thumbnail": "/videos/thumbnails/KnittingFactory/VID4_thumbnail.jpg",
-      "alt": "Knitting Factory Show - June 28th 2024"
+      "thumbnail": "/videos/thumbnails/KnittingFactory/VID4_thumbnail.png",
+      "alt": "Knitting Factory Show - June 28th 2024",
+      "rotate": "false"
     },
     {
       "src": "/videos/KnittingFactory/VID5.mp4",
-      "thumbnail": "/videos/thumbnails/KnittingFactory/VID5_thumbnail.jpg",
-      "alt": "Knitting Factory Show - June 28th 2024"
+      "thumbnail": "/videos/thumbnails/KnittingFactory/VID5_thumbnail.png",
+      "alt": "Knitting Factory Show - June 28th 2024",
+      "rotate": "false"
     },
     {
       "src": "/videos/KnittingFactory/VID6.mp4",
-      "thumbnail": "/videos/thumbnails/KnittingFactory/VID6_thumbnail.jpg",
-      "alt": "Knitting Factory Show - June 28th 2024"
+      "thumbnail": "/videos/thumbnails/KnittingFactory/VID6_thumbnail.png",
+      "alt": "Knitting Factory Show - June 28th 2024",
+      "rotate": "false"
     },
     {
       "src": "/videos/KnittingFactory/VID7.mp4",
-      "thumbnail": "/videos/thumbnails/KnittingFactory/VID7_thumbnail.jpg",
-      "alt": "Knitting Factory Show - June 28th 2024"
+      "thumbnail": "/videos/thumbnails/KnittingFactory/VID7_thumbnail.png",
+      "alt": "Knitting Factory Show - June 28th 2024",
+      "rotate": "false"
     },
-    {
-      "src": "/videos/KnittingFactory/VID8.mp4",
-      "thumbnail": "/videos/thumbnails/KnittingFactory/VID8_thumbnail.jpg",
-      "alt": "Knitting Factory Show - June 28th 2024"
-    },
-    {
-      "src": "/videos/KnittingFactory/VID9.mp4",
-      "thumbnail": "/videos/thumbnails/KnittingFactory/VID9_thumbnail.jpg",
-      "alt": "Knitting Factory Show - June 28th 2024"
-    },
-    {
-      "src": "/videos/KnittingFactory/VID10.mp4",
-      "thumbnail": "/videos/thumbnails/KnittingFactory/VID10_thumbnail.jpg",
-      "alt": "Knitting Factory Show - June 28th 2024"
-    },
+    
     {
       "src": "/videos/KnittingFactory/VID11.mp4",
-      "thumbnail": "/videos/thumbnails/KnittingFactory/VID11_thumbnail.jpg",
+      "thumbnail": "/videos/thumbnails/KnittingFactory/VID11_thumbnail.png",
       "alt": "Knitting Factory Show - June 28th 2024"
     },
     {
       "src": "/videos/KnittingFactory/VID12.mp4",
-      "thumbnail": "/videos/thumbnails/KnittingFactory/VID12_thumbnail.jpg",
+      "thumbnail": "/videos/thumbnails/KnittingFactory/VID12_thumbnail.png",
       "alt": "Knitting Factory Show - June 28th 2024"
     }
   ]

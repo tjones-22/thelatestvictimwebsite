@@ -23,7 +23,7 @@ const courier = Courier_Prime({
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
-  const [image,setImage]= useState();
+  const [image,setImage]= useState(true);
   const [video,setVideo] = useState();
   
   const handleImage = () => {
@@ -426,8 +426,8 @@ export default function Home() {
       </div>
       </div>
       
-      {!image && <Image />}
-      {!video && <Videos />}
+      {image && <Image />}
+      {video && <Videos />}
     </section>
 
     </>

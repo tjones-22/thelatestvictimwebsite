@@ -1,10 +1,13 @@
+"use client";
 import { useState, useEffect } from 'react';
+import 'video.js/dist/video-js.css';
+import videojs from 'video.js';
 
 const Videos = () => {
   const [videosK, setVideosK] = useState([]);
   const [videosN, setVideosN] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
-  const [loading, setLoading] = useState(true); // Global loading state
+  const [loading, setLoading] = useState(false);
   const [videosLoading, setVideosLoading] = useState({
     knittingFactory: true,
     newColony: true
@@ -36,6 +39,30 @@ const Videos = () => {
     fetchVideos();
   }, []);
 
+  useEffect(() => {
+    if (selectedVideo) {
+      const player = videojs('video-player', {
+        controls: true,
+        autoplay: true,
+        preload: 'auto',
+        // Customize video.js options here
+      });
+
+      player.src({ src: selectedVideo, type: 'video/mp4' });
+
+      // Listen for the `canplay` event to hide the loader
+      player.on('canplay', () => {
+        setLoading(false);
+      });
+
+      return () => {
+        if (player) {
+          player.dispose();
+        }
+      };
+    }
+  }, [selectedVideo]);
+
   const handleVideoClick = (src) => {
     setLoading(true);
     setSelectedVideo(src);
@@ -43,17 +70,17 @@ const Videos = () => {
 
   const handleCloseModal = () => {
     setSelectedVideo(null);
-    setLoading(false);
+    setLoading(false); // Hide loader when closing the modal
   };
 
   return (
     <>
       <h2 className="title-h3">Knitting Factory: June 28th 2024</h2>
-      <div className="scroll-container hide">
-        <div className="video-container">
+      <div className="scroll-container">
+        <div className="image-container">
           {videosK.map((video, index) => (
             <button
-              className="video-thumbnail"
+              className="photo"
               key={index}
               onClick={() => handleVideoClick(video.src)}
             >
@@ -82,10 +109,10 @@ const Videos = () => {
         </div>
       )}
       <div className="scroll-container">
-        <div className="video-container">
+        <div className="image-container">
           {videosN.map((video, index) => (
             <button
-              className="video-thumbnail"
+              className="photo"
               key={index}
               onClick={() => handleVideoClick(video.src)}
             >
@@ -110,15 +137,19 @@ const Videos = () => {
                 <div className="custom-loader"></div>
               </div>
             )}
-            <video
-              controls
-              autoPlay
-              src={selectedVideo}
-              className="video-player"
-              onCanPlayThrough={() => setLoading(false)}
-            >
-              Your browser does not support the video tag.
-            </video>
+            <div className="video-container">
+              <video
+                id="video-player"
+                className="  video-js vjs-default-skin video"
+                controls
+                autoPlay
+                preload="auto"
+                onCanPlay={() => setLoading(false)}
+              >
+                <source src={selectedVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       )}

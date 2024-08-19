@@ -1,11 +1,10 @@
 
 import { Inter } from "next/font/google";
 import { Cinzel } from "next/font/google";
-import "./css/component.css";
 import "./css/loaders.css";
 import "./globals.css";
+import "./css/component.css";
 import "./css/media.css";
-
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
