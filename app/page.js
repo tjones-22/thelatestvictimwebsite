@@ -8,6 +8,7 @@ import AudioPlayer from './components/AudioPlayer';
 import Link from 'next/link';
 import Images from './components/Images';
 import Loader from './components/Loader';
+import Videos from './components/Videos';
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -21,9 +22,13 @@ const courier = Courier_Prime({
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
+  const [image,setImage]= useState();
+  const [video,setVideo] = useState();
 
 
   useEffect(() => {
+    setImage(true);
+    setVideo(false);
     // Simulate a loading state
     const timer = setTimeout(() => {
       setLoading(false);
@@ -402,9 +407,10 @@ export default function Home() {
     </section>
 
     <section className="media">
-        <button> <h2> Photos</h2></button>
-        <button><h2> Videos</h2></button>
-      <Images />
+        <button onClick={()=>{setVideo(false); setImage(true);  }}> <h2> Photos</h2></button>
+        <button onClick={() => {setImage(false);setVideo(true); }}><h2> Videos</h2></button>
+      {image && <Image />}
+      {video && <Videos />}
     </section>
 
     </>
