@@ -9,7 +9,7 @@ const Videos = () => {
   const [videosN, setVideosN] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [videoLoaded, setVideoLoaded] = useState(false); // New state for video loaded
+  const [videoLoaded, setVideoLoaded] = useState(false);
   const [videosLoading, setVideosLoading] = useState({
     knittingFactory: true,
     newColony: true
@@ -44,6 +44,13 @@ const Videos = () => {
   useEffect(() => {
     if (selectedVideo) {
       setVideoLoaded(false); // Reset video loaded state
+
+      // Check if the video element is available
+      const videoElement = document.getElementById('video-player');
+      if (!videoElement) {
+        console.error('Video element not found.');
+        return;
+      }
 
       const player = videojs('video-player', {
         controls: true,
