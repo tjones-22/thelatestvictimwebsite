@@ -402,7 +402,8 @@ export default function Home() {
     </section>
 
     <section className="media">
-      <h2> Photos</h2>
+        <button> <h2> Photos</h2></button>
+        <button><h2> Videos</h2></button>
       <Images />
     </section>
 
